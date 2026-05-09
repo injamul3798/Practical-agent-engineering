@@ -35,6 +35,12 @@ It also includes a dedicated browser agents section:
 
 These materials focus on learning by doing, with examples that explore browser automation, research workflows, code review, security analysis, and multi-agent systems through notebooks.
 
+### Production Crew Projects
+
+The repository also includes production-ready CrewAI projects designed for real-world use:
+
+- `research-agents-crew/deep_research_crew/` - A multi-agent research system that conducts comprehensive, fact-checked research on any topic. The crew orchestrates specialized agents including a Research Planner that breaks down complex queries into manageable components, Topic Researchers that gather information from multiple web sources in parallel, Fact Checkers that validate information for accuracy and consistency, and a Report Writer that synthesizes findings into a well-structured report with citations and visualizations. This system demonstrates parallel processing, memory management, guardrails, and integration with web search and scraping tools.
+
 ## Repository structure
 
 Current high-level structure:
@@ -48,11 +54,19 @@ ai_browser_agents/
 |-- C1M2_Lab_2_deep_research_multi_agent_with_visualization_p2.ipynb
 |-- C1M2_Assignment intelligent_code_review_and_security_analysis.ipynb
 |-- README.md
-`-- browser(web)_agents/
-    |-- Building a Simple Web Agent.ipynb
-    |-- Building an Autonomous Web Agents.ipynb
-    |-- MCTS and AgentQ.ipynb
-    `-- README.md
+|-- browser(web)_agents/
+|   |-- Building a Simple Web Agent.ipynb
+|   |-- Building an Autonomous Web Agents.ipynb
+|   |-- MCTS and AgentQ.ipynb
+|   `-- README.md
+`-- research-agents-crew/
+    `-- deep_research_crew/
+        |-- src/
+        |-- knowledge/
+        |-- tests/
+        |-- README.md
+        |-- AGENTS.md
+        `-- pyproject.toml
 ```
 
 ## Who this repository is for
