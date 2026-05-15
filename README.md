@@ -25,6 +25,7 @@ The repository currently includes these notebook-based resources at the root lev
 - `C1M2_Lab_1_crewai_research_pipeline_with_guardrails_p1.ipynb`
 - `C1M2_Lab_2_deep_research_multi_agent_with_visualization_p2.ipynb`
 - `C1M2_Assignment intelligent_code_review_and_security_analysis.ipynb`
+- `C1M3_Lab_1_deep_research_p1.ipynb`
 
 It also includes a dedicated browser agents section:
 
@@ -40,6 +41,9 @@ These materials focus on learning by doing, with examples that explore browser a
 The repository also includes production-ready CrewAI projects designed for real-world use:
 
 - `research-agents-crew/deep_research_crew/` - A multi-agent research system that conducts comprehensive, fact-checked research on any topic. The crew orchestrates specialized agents including a Research Planner that breaks down complex queries into manageable components, Topic Researchers that gather information from multiple web sources in parallel, Fact Checkers that validate information for accuracy and consistency, and a Report Writer that synthesizes findings into a well-structured report with citations and visualizations. This system demonstrates parallel processing, memory management, guardrails, and integration with web search and scraping tools.
+- `deep_research_crew/` - A standalone CrewAI deep research project for parallel web research, fact-checking, and report generation. It includes project packaging, configuration, tests, custom tools, and guardrails for a more structured implementation.
+- `code_review_flow/` - A structured assignment-based project scaffold for building an automated code review flow with CrewAI-style crews, configs, tools, and guardrails.
+- `deep-research-observability/` - A project workspace for deeper research system experimentation with observability-focused structure, including `src`, `knowledge`, and `tests` directories.
 
 ## Repository structure
 
@@ -53,12 +57,29 @@ ai_browser_agents/
 |-- C1M2_Lab_1_crewai_research_pipeline_with_guardrails_p1.ipynb
 |-- C1M2_Lab_2_deep_research_multi_agent_with_visualization_p2.ipynb
 |-- C1M2_Assignment intelligent_code_review_and_security_analysis.ipynb
+|-- C1M3_Lab_1_deep_research_p1.ipynb
 |-- README.md
 |-- browser(web)_agents/
 |   |-- Building a Simple Web Agent.ipynb
 |   |-- Building an Autonomous Web Agents.ipynb
 |   |-- MCTS and AgentQ.ipynb
 |   `-- README.md
+|-- code_review_flow/
+|   |-- C1M3_Assignment.ipynb
+|   |-- src/
+|   |-- README.md
+|   `-- pyproject.toml
+|-- deep-research-observability/
+|   |-- src/
+|   |-- knowledge/
+|   `-- tests/
+|-- deep_research_crew/
+|   |-- src/
+|   |-- knowledge/
+|   |-- tests/
+|   |-- README.md
+|   |-- AGENTS.md
+|   `-- pyproject.toml
 `-- research-agents-crew/
     `-- deep_research_crew/
         |-- src/
@@ -86,10 +107,13 @@ Based on the files currently available, this repository already covers topics su
 - automatic deep research workflows
 - multi-agent code review
 - intelligent code review and security analysis
+- deep research lab implementations
 - CrewAI-style research pipelines with guardrails
 - multi-agent research with visualization
 - browser-based agent experiments
 - MCTS and AgentQ-related exploration
+- assignment-based flow scaffolds for code review systems
+- observability-oriented project organization for research agents
 
 ## How to use this repository
 
@@ -109,20 +133,10 @@ As more resources are added, the repository will gradually become a broader refe
 
 ## What will be added over time
 
-This repository will continue to expand with more hands-on resources related to building production-ready agent systems. Some of the following areas are already introduced in the current notebooks and will be developed further over time:
-- MCP server integration
-- observability, tracing, and evaluation
-- reliable orchestration patterns using crews and flows
-- deployment-oriented practices for agent systems
+This repository will continue to expand with more hands-on resources related to building production-ready agent systems. 
 
 Planned additions may also include notebook implementations, learning notes, assignments, and example projects based on broader agent engineering workflows.
 
-## Planned learning areas
-
-Future uploads are expected to deepen and extend themes like:
-
-- applying agent systems to real business and product use cases
-- moving from prototypes to production-ready agent workflows
 
 ## Contributor
 
